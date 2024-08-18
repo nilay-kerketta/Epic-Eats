@@ -1,0 +1,272 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #a6a6a6;
+}
+
+/* header styles */
+
+.header{
+    display: flex;
+    height: 80px;
+    max-width: 100%;
+    /* background-color: white; */
+    align-items: center;
+    justify-content:space-between;
+}
+
+/* site logo and name  */
+.site-logo-name,
+.search-box,
+.user-section{
+    display: flex;
+    align-items: center;
+}
+.site-logo-name img{
+    width: 50px;
+    margin: 10px;
+    padding-bottom: 10px;
+}
+.site-logo-name a{
+    text-decoration: none;
+    color: black;
+}
+
+
+/* search box and button  */
+.search-box,
+.user-section{
+    padding: 10px;
+}
+.search-box input{
+    background-color: white;
+    width: 400px;
+    height: 45px;
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 15px;
+    margin-right: 8px;
+}
+.search-box button {
+    width: 80px;
+    height: 45px;
+    border-radius: 30px;
+    background-color: #d9d9d9;
+}
+
+/* username and userlogo */
+.user-section h4{
+    padding: 10px;
+    padding-right: 20px;
+}
+.user-section i{
+    font-size: 28px;
+    padding-right: 30px;
+}
+
+/* main section  */
+.main{
+    display: flex;
+    justify-content: center;
+}
+.main-section{
+    margin-top: 25px;
+    border-radius: 50px;
+    width: 90%;
+    height: 550px;
+    background-color: #d9d9d9;
+    border: 3px solid black;
+}
+
+/* main top title  */
+.main-top-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+    padding: 10px 0px;
+}
+.main-top-title h1{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.main-bottom{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+/* main category */
+.main-left-part{
+    height: 445px;
+    width: 100%;
+    padding: 0 100px;
+}
+
+.category-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.first-row-category,
+.second-row-category{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 40%;
+    width: 100%;
+}
+.first-row-category img,
+.second-row-category img{
+    width: 120px;
+    height: 120px;
+    border: 2px solid transparent;
+    border-radius: 100px;
+}
+
+.first-row-category img:hover,
+.second-row-category img:hover{
+    border: 2px solid black;
+    cursor: pointer;
+}
+figure{
+    text-align: center;
+    font-weight: bold;
+}
+
+/* main ai pic  */
+.main-right-part{
+    height: 445px;
+    width: 50%;
+}
+
+.main-right-part img{
+    width: 305px;
+}
+
+/* horizontal line  */
+hr{
+    margin: 30px 0 0 0;
+    height: 6px;
+    background-color: black;
+}
+
+/* trending title  */
+.trending-title{
+    padding: 30px 0 8px 90px;
+}
+.trending-title h1{
+    font-size: 30px;
+}
+
+/* trending block  */
+.trending-block{
+    display: flex;
+    justify-content: center;
+}
+.trending-scrollbar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 220px;
+    width: 90%;
+    background-color: #d9d9d9;
+    border-radius: 40px;
+}
+
+.trending-scrollbar img{
+    width: 210px;
+    height: 180px;
+    border-radius: 20px;
+    border: 3px solid transparent;
+}
+
+.trending-scrollbar img:hover{
+    border: 3px solid black;
+    cursor: pointer;
+}
+.trending-scrollbar i{
+    font-size: 25px;
+}
+
+/* gallery  */
+
+.gallery-title h1{
+    text-align: center;
+    padding: 30px;
+}
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 30px;
+    row-gap: 30px;
+    padding: 0 50px;
+}
+
+.gallery img{
+    width: 350px;
+    border-radius: 30px;
+    border: 3px solid transparent;
+}
+
+.gallery img:hover{
+    border: 3px solid black;
+    cursor: pointer;
+}
+
+.gallery-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* pages bar  */
+.pages{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.pages-block{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50px;
+    width: 90%;
+    background-color: #d9d9d9;
+    border-radius: 20px;
+}
+
+.prev-page button,
+.next-page button{
+    font-weight: bold;
+    border: none;
+    padding: 0 80px;
+    height: 30px;
+    border-radius: 20px;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+
+.prev-page button:hover,
+.next-page button:hover{
+    background-color: black;
+    color: white;
+}
+
+/* footer  */
+.footer{
+    max-width: 100%;
+    height: 300px;
+    background-color: rgb(49, 46, 46);
+    margin-top: 30px;
+}

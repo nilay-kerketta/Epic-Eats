@@ -1,0 +1,364 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #aca1c5;
+    width: 100%;
+}
+
+/* defining headers font bangers and rest open sans condensed */
+.heading{
+    font-family: "bangers";
+    font-weight: normal;
+}
+
+.text{
+    font-family: "Open Sans";
+}
+
+/* a link removing decoration , coloring white */
+.no-decor{
+    text-decoration: none;
+    color: white;
+}
+
+
+nav{
+    height: 110px;
+    width: 100%;
+    background-color: #272626;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4vw;
+}
+
+.site-name h1{
+    font-size: 3rem;
+    font-weight: normal;
+}
+
+.nav-menus ul{
+    display: flex;
+}
+
+.nav-menus li{
+    list-style: none;
+    font-size: 2rem;
+    font-weight: normal;
+    padding: 1vw;
+}
+
+/* hero section styles */
+.hero-section{
+    height: 600px;
+    width: 100%;
+    background-color: #cfb2e5;
+    display: grid;
+}
+
+.search-bar{
+    padding: 2.3vw;
+    display: flex;
+    justify-content: center;
+}
+.search-bar input{
+    width: 35vw;
+    height: 3vw;
+    border-radius: 10rem;
+    border: 2px solid orange;
+    padding: 1vw;
+}
+.search-button{
+    padding-left: 0.3vw;
+}
+.search-button button{
+    height: 3vw;
+    width: 7vw;
+    border-radius: 10rem;
+    font-weight: bold;
+    border: 2px solid rgb(216, 148, 22);
+}
+.search-bar button:hover{
+    background-color: rgb(216, 148, 22);
+    color: white;
+}
+
+.hero-section-main{
+    overflow: hidden;
+    display: flex;
+}
+.hero-title-container{
+    width: 50%;
+    padding: 5.7vw 5vw ;
+}
+.hero-title-container h2 ,h3{
+    font-weight: normal;
+}
+.hero-title-container h2{
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 3rem;
+}
+.hero-title-container h3{
+    padding-bottom: 0.5rem;
+    text-align: center;
+    font-size: 2rem;
+}
+.hero-title-container p{
+    text-align: center;
+    font-size: 1.5rem;
+}
+.shop-now{
+    text-align: center;
+    padding: 1.5vw;
+}
+.shop-now button{
+    width: 7vw;
+    height: 4vw;
+    font-weight: bold;
+    border: none;
+}
+.shop-now button:hover{
+    background-color: black;
+    color: white;
+}
+.hero-image-container{
+    width: 55%;
+    position: relative;
+}
+.hero-image{
+    width: 85%;
+    max-width: 100%;
+    object-fit: cover;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.trending-products,
+.shop-by-category,
+.our-products{
+    text-align: center;
+    padding: 7vw 0 2vw 0;
+    font-size: 2rem;
+}
+
+/* products  */
+.products-grid,
+.category-grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 2vw;
+    row-gap: 3vw;
+    padding: 1vw 4.9vw;
+}
+.product-box{
+    border: 3px solid transparent;
+    width: 20vw;
+    height: 27vw;
+}
+.product-box:hover{
+    border: 3px solid black;
+}
+.product-image{
+    height: 70%;
+    background-color: white;
+}
+.product-image img{
+    object-fit: cover;
+    width: 100%;
+}
+.product-text{
+    height: 30%;
+    background-color: #333232;
+}
+.product-text p{
+    padding: 1.2vw 0.5vw;
+    color: white;
+    text-align: center;
+    font-weight: 500;
+}
+.product-text h3{
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+.category-box{
+    width: 20vw;
+    height: 20vw;
+    background-color: pink;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2vw;
+    border: 3px solid lightgray;
+}
+.category-box:hover{
+    border: 3px solid black;
+}
+.category-text{
+    font-size: 4rem;
+    text-align: center;
+}
+.first-cat{
+    background-color: #B4E1D1;
+}
+.second-cat{
+    background-color: #73bcf0;
+}
+.third-cat{
+    background-color: #F4A261;
+}
+.fourth-cat{
+    background-color: #8864c4;
+}
+.pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+footer{
+    height: 26vw;
+    width: 100%;
+    background-color: #272626;
+    display: flex;
+}
+.footer-texts{
+    width: 50%;
+    height: 100%;
+    padding: 7vw 3vw;
+}
+.footer-texts p{
+    color: white;
+    padding: 1vw;
+}
+.footer-texts a{
+    text-decoration: none;
+}
+.footer-socials{
+    height: 100%;
+    width: 50%;
+}
+
+
+/* media queries for phone  */
+@media (max-width: 600px) {
+    nav{
+        height: 20vw;
+    }
+    .nav-menus li{
+        font-size: 1rem;
+    }
+    .site-name h1{
+        font-size: 1.8rem;
+    }
+    .hero-section{
+        height: 55vw;
+    }
+    .search-bar{
+        padding: 3vw;
+    }
+    .search-bar input{
+        height: 2vw;
+        width: 60%;
+        padding: 3vw;
+    }
+    .search-button button{
+        height: 8vw;
+        width: 11vw;
+        font-size: 0.5rem;
+        font-weight: bold;
+    }
+    .hero-title-container{
+        padding: 4vw 1vw;
+    }
+    .hero-title-container h2{
+        font-size: 1rem;
+    }
+    .hero-title-container h3{
+        font-size: 0.8rem;
+    }
+    .hero-title-container p{
+        font-size: 0.5rem;
+    }
+    .hero-title-container button{
+        height: 5vw;
+        width: 10vw;
+        font-size: 0.4rem;
+    }
+    .hero-image{
+        width: 100%;
+        height: 95%;
+    }
+    .trending-products,
+    .shop-by-category,
+    .our-products{
+        font-size: 1rem;
+    }
+    .products-grid{
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 4vw;
+        padding: 1vw 8.5vw;
+    }
+    .product-box{
+        width: 40vw;
+        height: 60vw;
+    }
+    .product-text p{
+        padding: 2vw;
+        font-size: 0.5rem;
+    }
+    .category-box{
+        border-radius: 1.5rem;
+    }
+    .category-text{
+        font-size: 1rem;
+    }
+    .pagination img{
+        width: 25vw;
+    }
+    footer{
+        height: 35vw;
+    }
+    .footer-texts{
+        padding: 7vw 4vw;
+    }
+    .footer-texts p{
+        font-size: 0.5rem;
+    }
+}
+
+
+
+
+
+/* for 1900 above screen  */
+@media (min-width: 1900px){
+    .hero-image{
+        width: 45vw;
+    }
+    .hero-section{
+        height: 50vw;
+    }
+    .hero-title-container{
+        padding: 3vw;
+    }
+    .hero-title-container h2{
+        font-size: 5rem;
+    }
+    .search-bar{
+        padding-top: 4vw;
+    }
+    .search-bar input{
+        width: 40vw;
+        height: 3vw;
+    }
+}
